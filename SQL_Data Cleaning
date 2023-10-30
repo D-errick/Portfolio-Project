@@ -92,7 +92,7 @@ SET OwnerSplitAddress = PARSENAME(REPLACE(OwnerAddress, ',', '.') , 3)
 
 
 ALTER TABLE Nashville
-ADD OwnerSplitCity Nvarchar(255);
+ADD OwnerSplitCiAty Nvarchar(255);
 
 UPDATE Nashville
 SET OwnerSplitCity = PARSENAME(REPLACE(OwnerAddress, ',', '.') , 2)
